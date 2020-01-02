@@ -24,7 +24,7 @@ O REST, delimita algumas obrigações nessas transferências de dados.
 
 Resources seria então, uma entidade, um objeto.
 
-### 6 Necessidades (constraints) para ser RESTful
+### Necessidades (constraints) para ser RESTful
 
 - _Cliente-server_: Separação do cliente e do armazenamento de dados (servidor), desta forma,  poderemos ter uma 
 portabilidade do nosso sistema, usando o React para web e React Native para o smartphone, por exemplo.
@@ -47,4 +47,16 @@ executar no cliente.
 
 RESTFUL
 
-RESTFUL é a aplicação dos padrões REST 
+RESTFUL é a aplicação dos padrões REST
+
+## BOAS PRÁTICAS
+
+- Utilizar verbos HTTP para nossas requisições
+
+### VERBOS HTTP
+
+    - GET: Receber dados de um Resource.
+    - POST: Enviar dados ou informaçẽos para serem processados por um Resource.
+    - PUT: Atualizar dados de um Resource. 
+    - DELETE: Deletar um Resource.
+
