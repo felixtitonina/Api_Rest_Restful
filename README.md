@@ -1,4 +1,4 @@
-# API, REST e REStFUL
+# API, REST e RESTFUL
 
 API 
 
