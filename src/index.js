@@ -4,12 +4,12 @@ const bodyParser = require("body-parser")
 
 const app = express()
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.urlencoded({ extended: false})) 
 
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./app/controllers/index')(app);
 
-const PORT = process.env.PORT || 3000
+
+const PORT = process.env.PORT ||  3000
 app.listen(PORT, function(){
     console.log("Server is running", PORT )
 }) 
