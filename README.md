@@ -63,7 +63,7 @@ RESTFUL é a aplicação dos padrões REST
 ### Ajuste para rodar o projeto
 
 Eu estava com esse mesmo erro, e a solução que encontrei foi a seguinte: no teu projeto, abre node_modules/express-handlebars/lib/express-handlebars.js. EmlayoutsDirpõe o diretório do template e repete a mesma coisa para o partialsDir. Em defaultLayout deixa como undefined.
-
+```
 function ExpressHandlebars(config) {
   utils.assign(
     this,
@@ -78,3 +78,4 @@ function ExpressHandlebars(config) {
     },
     config
   );
+  ```
