@@ -60,3 +60,21 @@ RESTFUL é a aplicação dos padrões REST
     - PUT: Atualizar dados de um Resource. 
     - DELETE: Deletar um Resource.
 
+### Ajuste para rodar o projeto
+
+Eu estava com esse mesmo erro, e a solução que encontrei foi a seguinte: no teu projeto, abre node_modules/express-handlebars/lib/express-handlebars.js. EmlayoutsDirpõe o diretório do template e repete a mesma coisa para o partialsDir. Em defaultLayout deixa como undefined.
+
+function ExpressHandlebars(config) {
+  utils.assign(
+    this,
+    {
+      handlebars: Handlebars,
+      extname: ".handlebars",
+      layoutsDir: "./src/resources/mail/", 
+      partialsDir: "./src/resources/mail/", 
+      defaultLayout: undefined,
+      helpers: undefined,
+      compilerOptions: undefined
+    },
+    config
+  );
